@@ -14,6 +14,7 @@ interface CourseListInterface {
         fun onCreate(activity: Activity)
         fun onDestroy()
         fun getCourseList()
+        fun goToDetail(data: CourseEntity)
     }
     
     interface Interactor {
@@ -23,6 +24,6 @@ interface CourseListInterface {
     }
     
     interface Router {
-        
+        fun goToDetail(data: CourseEntity)
     }
 }

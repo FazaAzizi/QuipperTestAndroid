@@ -60,7 +60,7 @@ class CourseListActivity : AppCompatActivity(), CourseListInterface.View, Recycl
     }
 
     override fun <T> onClickedListener(item: T) {
-        //presenter.goToDetail(item = item)
+        if (item is CourseEntity)  presenter.goToDetail(data = item)
     }
 
 }
