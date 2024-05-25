@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.paging:paging-common-android:3.3.0-alpha02@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0878bf4c59f400af5d248d5814c220e4/transformed/jetified-paging-common-release/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0878bf4c59f400af5d248d5814c220e4/transformed/jetified-paging-common-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0878bf4c59f400af5d248d5814c220e4/transformed/jetified-paging-common-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.paging/paging-common-android/3.3.0-alpha02/d4c9d43f3dbd3461b8c2398f31dfa952c202e025/paging-common-android-3.3.0-alpha02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
