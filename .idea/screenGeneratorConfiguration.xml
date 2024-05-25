@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScreenGeneratorConfiguration">
+    <option name="settings">
+      <Settings>
+        <option name="categories">
+          <list>
+            <Category>
+              <option name="name" value="Viper Screen Generator" />
+            </Category>
+          </list>
+        </option>
+        <option name="screenElements">
+          <list>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%component%" />
+              <option name="name" value="Activity" />
+              <option name="relatedAndroidComponent" value="Activity" />
+              <option name="template" value="package %packageName%&#10;&#10;import androidx.appcompat.app.AppCompatActivity&#10;import android.os.Bundle&#10;import com.faza.quippertest.databinding.%component%%screenName%Binding&#10;&#10;class %screenName%%component% : AppCompatActivity(), %screenName%Interface.View {&#10;    &#10;    private val presenter: %screenName%Presenter = %screenName%Presenter(this)&#10;    private val binding: %component%%screenName%Binding by lazy {&#10;        %component%%screenName%Binding.inflate(layoutInflater)&#10;    }&#10;    &#10;    override fun onCreate(savedInstanceState: Bundle?) {&#10;        super.onCreate(savedInstanceState)&#10;        setContentView(binding.root)&#10;        presenter.onCreate(this)&#10;    }&#10;    &#10;    override fun onDestroy() {&#10;        super.onDestroy()&#10;        presenter.onDestroy()&#10;    }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Presenter" />
+              <option name="relatedAndroidComponent" value="Activity" />
+              <option name="template" value="package %packageName%&#10;&#10;import android.app.Activity&#10;&#10;class %screenName%%screenElement%(&#10;    private var view: %screenName%Interface.View? = null&#10;) : %screenName%Interface.%screenElement% {&#10;    &#10;    private var interactor: %screenName%Interface.Interactor? = null&#10;    private var router: %screenName%Interface.Router? = null&#10;    &#10;    override fun onCreate(activity: Activity) {&#10;        view = activity as %screenName%Activity&#10;        interactor = %screenName%Interactor(activity)&#10;        router = %screenName%Router(activity)&#10;    }&#10;    &#10;    override fun onDestroy() {&#10;        view = null&#10;        router = null&#10;    }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Interface" />
+              <option name="relatedAndroidComponent" value="Activity" />
+              <option name="template" value="package %packageName%&#10;&#10;import android.app.Activity&#10;&#10;interface %screenName%%screenElement% {&#10;    interface View {&#10;        &#10;    }&#10;    &#10;    interface Presenter {&#10;        fun onCreate(activity: Activity)&#10;        fun onDestroy()&#10;    }&#10;    &#10;    interface Interactor {&#10;        &#10;    }&#10;    &#10;    interface Router {&#10;        &#10;    }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Interactor" />
+              <option name="relatedAndroidComponent" value="Activity" />
+              <option name="template" value="package %packageName%&#10;&#10;import android.app.Activity&#10;import com.faza.quippertest.services.Sessions&#10;import com.faza.quippertest.services.NetworkBuilder&#10;import io.reactivex.rxjava3.disposables.CompositeDisposable&#10;&#10;class %screenName%%screenElement%(activity: Activity) : %screenName%Interface.%screenElement% {&#10;    &#10;    private val disposable = CompositeDisposable()&#10;    private val apiService = NetworkBuilder.apiService&#10;    private val sessions = Sessions(activity)&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Router" />
+              <option name="relatedAndroidComponent" value="Activity" />
+              <option name="template" value="package %packageName%&#10;&#10;import android.app.Activity&#10;&#10;class %screenName%%screenElement%(private val activity: Activity) : %screenName%Interface.%screenElement%" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%component%" />
+              <option name="name" value="Fragment" />
+              <option name="relatedAndroidComponent" value="Fragment" />
+              <option name="template" value="package %packageName%&#10;&#10;import android.os.Bundle&#10;import android.view.LayoutInflater&#10;import android.view.View&#10;import android.view.ViewGroup&#10;import androidx.fragment.app.Fragment&#10;import com.faza.quippertest.databinding.%component%%screenName%Binding&#10;&#10;class %screenName%%component% : Fragment(), %screenName%Interface.View {&#10;&#10;    private val presenter: %screenName%Presenter = %screenName%Presenter(this)&#10;    private val binding: %component%%screenName%Binding by lazy {&#10;        %component%%screenName%Binding.inflate(layoutInflater)&#10;    }&#10;    &#10;    override fun onCreate(savedInstanceState: Bundle?) {&#10;        super.onCreate(savedInstanceState)&#10;        presenter.onCreate(this)&#10;    }&#10;    &#10;    override fun onCreateView(&#10;        inflater: LayoutInflater,&#10;        container: ViewGroup?,&#10;        savedInstanceState: Bundle?&#10;    ): View {&#10;        return binding.root&#10;    }&#10;&#10;    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {&#10;        super.onViewCreated(view, savedInstanceState)&#10;        presenter.onViewCreated(this)&#10;    }&#10;&#10;    override fun onDestroy() {&#10;        super.onDestroy()&#10;        presenter.onDestroy()&#10;    }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Presenter" />
+              <option name="relatedAndroidComponent" value="Fragment" />
+              <option name="template" value="package %packageName%&#10;&#10;import androidx.fragment.app.Fragment&#10;&#10;class %screenName%%screenElement%(&#10;    private var view: %screenName%Interface.View? = null&#10;) : %screenName%Interface.%screenElement% {&#10;&#10;    private var interactor: %screenName%Interface.Interactor? = null&#10;    private var router: %screenName%Interface.Router? = null&#10;&#10;    override fun onCreate(fragment: Fragment) {&#10;        view = fragment as %screenName%Fragment&#10;        interactor = %screenName%Interactor(fragment)&#10;        router = %screenName%Router(fragment)&#10;    }&#10;    &#10;    override fun onViewCreated(fragment: Fragment) {&#10;        &#10;    }&#10;&#10;    override fun onDestroy() {&#10;        view = null&#10;        router = null&#10;    }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Interface" />
+              <option name="relatedAndroidComponent" value="Fragment" />
+              <option name="template" value="package %packageName%&#10;&#10;import androidx.fragment.app.Fragment&#10;&#10;interface %screenName%%screenElement% {&#10;    interface View {&#10;&#10;    }&#10;&#10;    interface Presenter {&#10;        fun onCreate(fragment: Fragment)&#10;        fun onViewCreated(fragment: Fragment)&#10;        fun onDestroy()&#10;    }&#10;&#10;    interface Interactor {&#10;&#10;    }&#10;&#10;    interface Router {&#10;&#10;    }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Interactor" />
+              <option name="relatedAndroidComponent" value="Fragment" />
+              <option name="template" value="package %packageName%&#10;&#10;import com.faza.quippertest.services.Sessions&#10;import com.faza.quippertest.services.NetworkBuilder&#10;import io.reactivex.rxjava3.disposables.CompositeDisposable&#10;import androidx.fragment.app.Fragment&#10;&#10;class %screenName%%screenElement%(fragment: Fragment) : %screenName%Interface.%screenElement% {&#10;    &#10;    private val disposable = CompositeDisposable()&#10;    private val apiService = NetworkBuilder.apiService&#10;    private val sessions = fragment.context?.let { Sessions(it) }&#10;}" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%screenName%%screenElement%" />
+              <option name="name" value="Router" />
+              <option name="relatedAndroidComponent" value="Fragment" />
+              <option name="template" value="package %packageName%&#10;&#10;import androidx.fragment.app.Fragment&#10;&#10;class %screenName%%screenElement%(private val fragment: Fragment) : %screenName%Interface.%screenElement%" />
+            </ScreenElement>
+            <ScreenElement>
+              <option name="fileNameTemplate" value="%componentLowerCase%_%screenNameSnakeCase%" />
+              <option name="fileType" value="Layout XML" />
+              <option name="name" value="layout" />
+              <option name="template" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&gt;&#10;&#10;&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;" />
+            </ScreenElement>
+          </list>
+        </option>
+      </Settings>
+    </option>
+  </component>
+</project>

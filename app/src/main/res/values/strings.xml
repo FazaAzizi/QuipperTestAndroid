@@ -1,30 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">Quipper Test</string>
     <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et purus non velit maximus efficitur sit amet ac nunc. Praesent vitae est nulla. Duis sagittis, magna id tristique feugiat, tortor est consequat arcu, in egestas ex quam eget mauris. Ut vestibulum tristique lectus vitae interdum. Ut libero erat, semper sit amet elit at, fringilla consequat urna. Ut id vestibulum ipsum, sed volutpat ex. Duis condimentum justo nec mauris dapibus tincidunt. Pellentesque dictum libero et efficitur auctor. Aenean varius ut odio nec elementum. Nunc in aliquam nibh. Integer congue lectus orci, vitae ornare felis gravida quis. Quisque faucibus velit ultrices lectus scelerisque semper. Nullam dapibus, risus a fringilla vestibulum, tortor arcu dignissim leo, at blandit nisl libero quis enim.\n\nNulla facilisi. Vivamus sem odio, accumsan ac dapibus sed, dictum venenatis tellus. Duis id nunc eget arcu sagittis iaculis vel eget diam. Integer scelerisque mi eros. Nunc mi risus, fermentum id sapien venenatis, sodales consectetur nisl. Aenean quis fringilla massa. In aliquam ex a arcu pellentesque pretium. In hendrerit, lacus nec tristique posuere, orci erat pretium enim, vel ornare tortor dolor eget erat. Aliquam erat volutpat. Nam faucibus augue et accumsan semper. Mauris vestibulum dapibus sollicitudin. Praesent erat nulla, pellentesque eu diam nec, sodales vestibulum purus. Mauris porttitor ante ut turpis ullamcorper luctus. Sed auctor gravida posuere. Duis eu odio maximus, consectetur ipsum ultricies, volutpat sapien. Praesent id purus quis augue iaculis pellentesque.</string>
-
-    <!-- Common -->
-    <string name="format_rupiah">IDR %1$s</string>
-    <string name="format_period" translatable="false">%1$s - %2$s</string>
-
-
-    <!-- News & Tips -->
-    <string name="title_label_news_tips">NEWS &amp; TIPS</string>
-    <string name="title_label_desc_news_tips">Get the latest information through exclusive news and tips from Auto2000</string>
-    <string name="title_news">News</string>
-    <string name="title_news_count"><![CDATA[NEWS (%1$s)]]></string>
-    <string name="title_tips_trick">Tips &amp; Tricks</string>
-    <string name="title_tips_trick_count"><![CDATA[TIPS & TRICKS (%1$s)]]></string>
-    <string name="title_product_reviews">Product Reviews</string>
-    <string name="title_product_reviews_count"><![CDATA[PRODUCT REVIEWS (%1$s)]]></string>
-    <string name="title_events">Events</string>
-    <string name="title_events_count"><![CDATA[EVENTS (%1$s)]]></string>
-    <string name="title_posted_on"><![CDATA[Posted on %1$s]]></string>
-    <string name="title_get_the_best_promos">Dapatkan Promo Terbaik</string>
-    <string name="title_inquiry_sub">Please fill in your data</string>
-    <string name="title_label_get_latest_promo">Get Latest Promo</string>
-    <string name="title_label_product_review_all">ALL</string>
-    <string name="title_label_product_review_new_car">NEW CAR</string>
-    <string name="title_label_product_review_service">SERVICE</string>
-    <string name="title_label_product_review_other">OTHER</string>
+    <string name="course_list_title">Course List</string>
+    <string name="search_title_or_presenter_name_course_list">Search Title or Presenter Name...</string>
+    <string name="title_course_detail">N/A</string>
+    <string name="tumbnail_course_list">tumbnail</string>
 
 </resources>
