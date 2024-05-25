@@ -2,7 +2,6 @@ package com.faza.quippertest.module.course_list
 
 import android.app.Activity
 import com.faza.quippertest.module.course_list.entity.CourseEntity
-import com.faza.quippertest.module.course_list.entity.dummyCourseList
 
 class CourseListPresenter(
     private var view: CourseListInterface.View? = null

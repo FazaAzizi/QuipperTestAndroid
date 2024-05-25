@@ -13,6 +13,7 @@ import com.faza.quippertest.utils.Utils.setOnSingleClickListener
 
 class RecyclerViewCourseListAdapter() : RecyclerView.Adapter<BaseViewHolder>() {
     private val courseList: MutableList<CourseEntity> = mutableListOf()
+    private var filteredData: List<CourseEntity> = courseList
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return CourseListHolder(
             ItemCourseListBinding.inflate(
@@ -30,12 +31,12 @@ class RecyclerViewCourseListAdapter() : RecyclerView.Adapter<BaseViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return courseList.size
+        return filteredData.size
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
         when (holder) {
-            is CourseListHolder -> holder.bind(courseList[position])
+            is CourseListHolder -> holder.bind(filteredData[position])
         }
     }
 
@@ -47,6 +48,16 @@ class RecyclerViewCourseListAdapter() : RecyclerView.Adapter<BaseViewHolder>() {
 
     fun setOnItemClickListener(onClickListener: OnItemClickListener) {
         this.onItemClickListener = onClickListener
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun filter(text: String) {
+        filteredData = if (text.isEmpty()) {
+            courseList.toList()
+        } else {
+            courseList.filter { it.title.contains(text, true) || it.presenterName.contains(text, true) }
+        }
+        notifyDataSetChanged()
     }
 
     inner class CourseListHolder(
