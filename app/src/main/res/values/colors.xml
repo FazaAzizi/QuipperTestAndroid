@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Commons-->
+    <color name="black">#000000</color>
+    <color name="black30">#BDBCBC</color>
+    <color name="black50">#7F7F7F</color>
+    <color name="black80">#333333</color>
+    <color name="grey">#A7A9AC</color>
+    <color name="softGrey">#DBDCDE</color>
+    <color name="darkGrey">#7F7F7F</color>
+    <color name="borderGrey">#ECECEC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightGrey">#8F8F9B</color>
+    <color name="greyTransparent">#80000000</color>
+    <color name="blackAccountName">#333333</color>
+    <color name="greyAccountNumber">#7F7F7F</color>
+    <color name="black65">#a6a6a6</color>
+
+    <!-- red -->
+    <color name="red_1">#FFCCCC</color>
+    <color name="red_2">#FF6666</color>
+    <color name="red_3">#FF0000</color>
+    <color name="red_4">#CC0000</color>
+    <color name="red_5">#990000</color>
+    <color name="red_6">#640D0E</color>
+    <color name="red_7">#520a0b</color>
+    <color name="red_8">#CE181E</color>
+
+    <!-- red maroon -->
+    <color name="red_maroon_1">#DE0000</color>
+    <color name="red_maroon_2">#AB0000</color>
+    <color name="red_maroon_3">#780000</color>
+    <color name="red_maroon_4">#450000</color>
+    <color name="red_maroon_5">#120000</color>
+
+    <!-- grey -->
+    <color name="grey_1">#F6F6F6</color>
+    <color name="grey_2">#DBDCDE</color>
+    <color name="grey_3">#A7A9AC</color>
+    <color name="grey_4">#73767A</color>
+    <color name="grey_5">#424345</color>
+    <color name="grey_6">#F0F0F0</color>
+    <color name="grey_7">#D8D8D8</color>
+    <color name="grey_8">#D3D3D3</color>
+    <color name="grey_9">#777777</color>
+    <color name="grey_10">#E7E7E7</color>
+    <color name="grey_11">#656263</color>
+    <color name="grey_12">#797676</color>
+    <color name="grey_13">#A1A1A1</color>
+
+    <!-- bright_coral -->
+    <color name="bright_coral_1">#FBB5B3</color>
+    <color name="bright_coral_2">#F88683</color>
+    <color name="bright_coral_3">#F55753</color>
+    <color name="bright_coral_4">#F22823</color>
+    <color name="bright_coral_5">#D6110C</color>
+
+    <!-- pale_salmon -->
+    <color name="pale_salmon_1">#FCDCD9</color>
+    <color name="pale_salmon_2">#F8B1AA</color>
+    <color name="pale_salmon_3">#F05B4C</color>
+    <color name="pale_salmon_4">#C62110</color>
+    <color name="pale_salmon_5">#97190C</color>
+
+    <!-- deep_saffron -->
+    <color name="deep_saffron_1">#FFCC99</color>
+    <color name="deep_saffron_2">#FF9933</color>
+    <color name="deep_saffron_3">#FF8000</color>
+    <color name="deep_saffron_4">#994D00</color>
+    <color name="deep_saffron_5">#663300</color>
+
+    <!-- black -->
+    <color name="black_1">#B2B2B2</color>
+    <color name="black_2">#7F7F7F</color>
+    <color name="black_3">#A6000000</color>
+    <color name="black_4">#333333</color>
+    <color name="black_5">#000000</color>
+    <color name="black_6">#99000000</color>
+    <color name="black_7">#A62E2E2E</color>
+    <color name="black_8">#959595</color>
+    <color name="black_9">#3C3C40</color>
+    <color name="black_10">#F4F4F4</color>
+    <color name="black_11">#7B7979</color>
+
+    <!-- white -->
+    <color name="white_1">#4DFFFFFF</color>
+    <color name="white_2">#80FFFFFF</color>
+    <color name="white_3">#A6FFFFFF</color>
+    <color name="white_4">#CCFFFFFF</color>
+    <color name="white_5">#FFFFFF</color>
+    <color name="white_6">#F0F0F0</color>
+    <color name="white_7">#F8F8F8</color>
+    <color name="white_8">#E9E9E9</color>
+    <color name="white_9">#F5F5F5</color>
+
+    <!-- green -->
+    <color name="green">#83C048</color>
+    <color name="green_2">#689839</color>
+    <color name="green_3">#94C682</color>
+    <color name="green_4">#3AAF03</color>
+
+    <!-- blue marker -->
+    <color name="blue_marker">#418BBF</color>
+    <color name="blue_marker_2">#82B5C6</color>
+
+    <!-- blue -->
+    <color name="blue_1">#4A9ECD</color>
+    <color name="blue_2">#036EBC</color>
+    <color name="blue_3">#45B3D5</color>
+
+    <!-- yellow -->
+    <color name="yellow_1">#FEC300</color>
+    <color name="yellow_2">#F98F4A</color>
+    <color name="yellow_3">#E66534</color>
+    <color name="yellow_4">#80FFE293</color>
+    <color name="yellow_5">#F6E195</color>
+
+    <color name="supportive_red">#CE181E</color>
+    <color name="reliable_pink">#934649</color>
+    <color name="reliable_black">#231F20</color>
+    <color name="reliable_black_90">#393536</color>
+    <color name="reliable_black_80">#4F4C4D</color>
+    <color name="reliable_black_70">#656263</color>
+    <color name="reliable_black_50">#918F8F</color>
+
+    <!-- color slider -->
+    <color name="sliderColorPrimary">#FFF0F0F0</color>
+    <color name="sliderColorOnPrimary">#F55753</color>
+    <color name="sliderColorLabel">#FFACACAC</color>
+    <color name="sliderColorLabelActive">#FF484848</color>
+
+    <!-- color tab layout -->
+    <color name="tabIndicatorColor">#CE181E</color>
+</resources>

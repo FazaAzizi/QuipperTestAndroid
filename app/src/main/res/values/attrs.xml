@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputView">
+        <!--2-->
+        <attr name="title" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="lines" format="integer" />
+        <attr name="inputType" format="enum">
+            <enum name="TEXT" value="0" />
+            <enum name="TEXTCAPWORD" value="1" />
+            <enum name="TEXTCAPCHARACTER" value="2" />
+            <enum name="TEXTCAPSENTENCE" value="3" />
+            <enum name="TEXTPERSONNAME" value="4" />
+            <enum name="TEXTFILTER" value="5" />
+            <enum name="MULTILINE" value="6" />
+            <enum name="PASSWORD" value="7" />
+            <enum name="PASSWORD_NUMBER" value="8" />
+            <enum name="NUMBER" value="9" />
+            <enum name="NUMBER_DECIMAL" value="10" />
+            <enum name="EMAIL" value="11" />
+            <enum name="DISABLE" value="12" />
+            <enum name="CURRENCY" value="13" />
+            <enum name="CLICK" value="14" />
+        </attr>
+        <attr name="imageStart" format="reference" />
+        <attr name="imageEnd" format="reference" />
+        <attr name="enable" format="boolean" />
+        <attr name="labelColor" format="color|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="hintColor" format="color|reference" />
+        <attr name="boxBackgroundColor" format="color|reference" />
+        <attr name="underlineColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="CustomToolbar">
+        <attr name="title" />
+        <attr name="android:textAllCaps" />
+        <attr name="toolbarType" format="enum">
+            <enum name="TOOLBAR_WITH_EXTRA_SECTION_AND_SECTION_CTA" value="0" />
+            <enum name="TOOLBAR_WITH_EXTRA_SECTION_AND_NO_CTA" value="1" />
+            <enum name="TOOLBAR_WITH_CTA_AND_NO_EXTRA_SECTION" value="2" />
+            <enum name="TOOLBAR_NO_CTA_AND_NO_EXTRA_SECTION" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="BaseCircleIndicatorClass">
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_gravity" format="reference" />
+        <attr name="ci_orientation" format="reference" />
+        <attr name="ci_page_indicator" format="boolean" />
+        <attr name="ci_max_indicator_enabled" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomPromoSection">
+        <attr name="title" />
+        <attr name="sub_title" format="string" />
+    </declare-styleable>
+</resources>

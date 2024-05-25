@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- News & Tips -->
+    <string name="title_label_news_tips">BERITA &amp; TIPS</string>
+    <string name="title_label_desc_news_tips">Dapatkan informasi terkini melalui berita eksklusif dan tips dari Auto2000</string>
+    <string name="title_news">Berita</string>
+    <string name="title_news_count"><![CDATA[BERITA (%1$s)]]></string>
+    <string name="title_tips_trick">Tip &amp; Trik</string>
+    <string name="title_tips_trick_count"><![CDATA[TIP & TRIK (%1$s)]]></string>
+    <string name="title_product_reviews">Ulasan Produk</string>
+    <string name="title_product_reviews_count"><![CDATA[PRODUCT REVIEWS (%1$s)]]></string>
+    <string name="title_events">Event</string>
+    <string name="title_events_count"><![CDATA[EVENT (%1$s)]]></string>
+    <string name="title_posted_on"><![CDATA[Diterbitkan %1$s]]></string>
+    <string name="title_get_the_best_promos">Get The Best Promos</string>
+    <string name="title_inquiry_sub">Silakan isi data Anda</string>
+    <string name="title_label_get_latest_promo">Dapatkan Promo Terbaru</string>
+    <string name="title_label_product_review_all">SEMUA</string>
+    <string name="title_label_product_review_new_car">MOBIL BARU</string>
+    <string name="title_label_product_review_service">SERVIS</string>
+    <string name="title_label_product_review_other">LAINNYA</string>
+</resources>

@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuipperTest" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/blackAccountName</item>
+        <item name="colorPrimaryVariant">@color/blackAccountName</item>
+        <item name="colorOnPrimary">@color/white_5</item>
+        <item name="colorOnSecondary">@color/black_5</item>
+        <item name="colorAccent">@color/blackAccountName</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/supportive_red</item>
+        <!-- Customize your theme here. -->
+
+        <!--No Action Bar Style-->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+        <item name="colorControlNormal">@color/blackAccountName</item>
+        <item name="colorControlActivated">@color/blackAccountName</item>
+    </style>
+
+    <!-- BottomSheet Rounded-->
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <!-- Bottomsheet Dialog -->
+    <style name="FullScreenBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_peekHeight">0dp</item>
+    </style>
+
+    <style name="BottomSheetOnTopKeyBoard" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <!-- TextInputEditText -->
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.FilledBox" parent="">
+        <item name="colorControlActivated">@color/reliable_black_50</item>
+        <item name="colorControlNormal">@color/reliable_black_50</item>
+        <item name="colorControlHighlight">@color/reliable_black_50</item>
+        <item name="colorAccent">@color/reliable_black_50</item>
+    </style>
+
+    <!-- Custom CardView Style -->
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+    </style>
+</resources>
