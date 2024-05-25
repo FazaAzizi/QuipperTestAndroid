@@ -27,12 +27,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:contentDescription="skmdksmd"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/sample_promo_1" />
+            tools:src="@drawable/sample_promo_1"
+            android:contentDescription="@string/tumbnail_course_list" />
 
         <TextView
             android:id="@+id/tv_title_course"
@@ -49,7 +49,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iv_course_list"
             app:layout_constraintTop_toTopOf="@+id/iv_course_list"
-            tools:text="N/A" />
+            android:text="@string/title_course_detail" />
 
         <TextView
             android:id="@+id/tv_date"
@@ -66,7 +66,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iv_course_list"
             app:layout_constraintTop_toBottomOf="@+id/tv_title_course"
-            tools:text="N/A" />
+            android:text="@string/title_course_detail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

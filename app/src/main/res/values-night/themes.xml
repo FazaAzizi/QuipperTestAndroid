@@ -15,7 +15,7 @@
         <item name="colorOnSecondary">@color/black_5</item>
         <item name="colorAccent">@color/blackAccountName</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/supportive_red</item>
+        <item name="android:statusBarColor">@color/black</item>
         <!-- Customize your theme here. -->
 
         <!--No Action Bar Style-->
