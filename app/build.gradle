@@ -52,8 +52,8 @@ android {
             signingConfig signingConfigs.release
             versionNameSuffix "-DEV"
             buildConfigField 'String', 'apiKey', '"0e4714dfe7msh005fa84627b60bdp1d2971jsn3d2ecd0183bb"'
-            buildConfigField 'String', 'hostName', '"https://dummyjson.com/"'
-            buildConfigField 'String', 'baseUrl', '"https://dummyjson.com/"'
+            buildConfigField 'String', 'hostName', '"https://quipper.github.io/"'
+            buildConfigField 'String', 'baseUrl', '"https://quipper.github.io/"'
             manifestPlaceholders = [appName: "Quipper Test DEV"]
             copy {
                 from 'src/dev/'
@@ -67,8 +67,8 @@ android {
             signingConfig signingConfigs.release
             versionNameSuffix "-SIT"
             buildConfigField 'String', 'apiKey', '""'
-            buildConfigField 'String', 'hostName', '"https://dummyjson.com/"'
-            buildConfigField 'String', 'baseUrl', '"https://dummyjson.com/"'
+            buildConfigField 'String', 'hostName', '"https://quipper.github.io/"'
+            buildConfigField 'String', 'baseUrl', '"https://quipper.github.io/"'
             manifestPlaceholders = [appName: "Quipper Test SIT"]
             copy {
                 from 'src/sit/'
@@ -81,8 +81,8 @@ android {
             dimension "version"
             signingConfig signingConfigs.release
             buildConfigField 'String', 'apiKey', '""'
-            buildConfigField 'String', 'hostName', '"https://dummyjson.com/"'
-            buildConfigField 'String', 'baseUrl', '"https://dummyjson.com/"'
+            buildConfigField 'String', 'hostName', '"https://quipper.github.io/"'
+            buildConfigField 'String', 'baseUrl', '"https://quipper.github.io/"'
             manifestPlaceholders = [appName: "Quipper Test"]
             copy {
                 from 'src/prod/'

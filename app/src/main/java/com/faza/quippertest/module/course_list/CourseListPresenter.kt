@@ -26,13 +26,11 @@ class CourseListPresenter(
     }
 
     override fun getCourseList() {
-//        interactor?.getDataCourseList(
-//            onSuccess = {
-//                view?.setCourseListData(it)
-//            }
-//        )
-
-        view?.setCourseListData(dummyCourseList)
+        interactor?.getDataCourseList(
+            onSuccess = {
+                view?.setCourseListData(it)
+            }
+        )
     }
 
     override fun goToDetail(data: CourseEntity) {
